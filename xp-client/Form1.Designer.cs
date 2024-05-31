@@ -39,6 +39,11 @@
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // serialPort1
+            // 
+            this.serialPort1.PortName = "COM4";
+            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
+            // 
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -52,12 +57,14 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(499, 61);
             this.button1.TabIndex = 1;
-            this.button1.Text = "启动监听";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "START";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // splitContainer1
             // 
