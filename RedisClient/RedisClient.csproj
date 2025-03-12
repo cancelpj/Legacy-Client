@@ -49,6 +49,9 @@
       <Version>3.8.803</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PostBuildEvent>dotNET_Reactor.Console.exe -project "$(ProjectDir)release.nrproj"</PostBuildEvent>

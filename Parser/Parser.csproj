@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Items2200.cs" />
+    <Compile Include="Items2400.cs" />
     <Compile Include="ItemsBase.cs" />
     <Compile Include="Parser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
